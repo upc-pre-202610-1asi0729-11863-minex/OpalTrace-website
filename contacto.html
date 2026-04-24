@@ -1,18 +1,20 @@
-<!doctype html>
+ï»¿<!doctype html>
 <html lang="es">
-<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Contáctanos | OpalTrace</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css" /></head>
-<body>
-<header class="subhero contact-hero"><nav class="navbar container"><div class="brand">OpalTrace <span>DE MINEX</span></div><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a class="btn-nav" href="contacto.html">Registrarse</a></li><li><a href="index.html">ES</a></li></ul></nav><div class="container"><h1>Contáctanos</h1></div></header>
-<main class="container section">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contactanos | OpalTrace</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body data-page="contact" data-title-key="contact.title">
+<header class="subhero contact-hero"><nav class="navbar container"><div class="brand">OpalTrace <span>DE MINEX</span></div><button class="menu-toggle" aria-label="Abrir menu">&#9776;</button><ul class="nav-links"><li><a href="index.html" data-i18n="footer.home">Inicio</a></li><li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li><li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li><li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li></ul></nav><div class="container reveal"><h1 data-i18n="contact.h1">Cont&aacute;ctanos</h1></div></header>
+<main class="container section reveal">
   <form class="contact-form">
-    <label>Nombre Completo:<input type="text" required></label>
-    <label>Email:<input type="email" required></label>
-    <label>Teléfono:<input type="tel"></label>
-    <label>Tipo de cliente<input type="text"></label>
-    <label>Mensaje<textarea rows="5"></textarea></label>
-    <label class="check"><input type="checkbox"> Al suscribirme, acepto los Términos y Condiciones.</label>
-    <button class="btn" type="submit">¡Descubrir!</button>
+    <label><span data-i18n="contact.name">Nombre completo:</span><input type="text" required></label>
+    <label><span data-i18n="contact.email">Email:</span><input type="email" required></label>
+    <label><span data-i18n="contact.phone">Tel&eacute;fono:</span><input type="tel"></label>
+    <label><span data-i18n="contact.clientType">Tipo de cliente:</span><input type="text"></label>
+    <label><span data-i18n="contact.message">Mensaje:</span><textarea rows="5"></textarea></label>
+    <label class="check"><input type="checkbox"> <span data-i18n="contact.terms">Al suscribirme, acepto los T&eacute;rminos y Condiciones.</span></label>
+    <button class="btn" type="submit" data-i18n="contact.cta">&iexcl;Descubrir!</button>
   </form>
 </main>
-<footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="nosotros.html">Nosotros</a><a href="index.html">Inicio</a><a href="privacidad.html">Políticas de Privacidad</a><a href="terminos.html">Términos y Condiciones</a></div></div></footer>
+<footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="nosotros.html" data-i18n="nav.about">Nosotros</a><a href="index.html" data-i18n="footer.home">Inicio</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a></div></div></footer>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
 </body></html>

@@ -1,30 +1,36 @@
-<!doctype html>
+ï»¿<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nosotros | OpalTrace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="about" data-title-key="about.title">
   <header class="subhero about-hero">
     <nav class="navbar container">
       <div class="brand">OpalTrace <span>DE MINEX</span></div>
-      <ul>
-        <li><a href="index.html#como">¿Cómo funciona?</a></li><li><a href="contacto.html">Iniciar Sesión</a></li><li><a class="btn-nav" href="contacto.html">Registrarse</a></li><li><a href="index.html">ES</a></li>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#como" data-i18n="nav.how">&iquest;C&oacute;mo funciona?</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesi&oacute;n</a></li>
+        <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
+        <li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li>
       </ul>
     </nav>
-    <div class="container"><h1>Nosotros</h1></div>
+    <div class="container reveal"><h1 data-i18n="about.h1">Nosotros</h1></div>
   </header>
-  <main class="container static-page">
-    <p>Somos MINEX, una startup tecnológica dedicada a la industria minera, enfocada en revolucionar la cadena de suministro mediante nuestra plataforma OpalTrace. Nuestro objetivo es monitorear, examinar y certificar el recorrido de los minerales desde su extracción hasta el producto final.</p>
-    <p>A través de OpalTrace ayudamos a las empresas mineras a maximizar su eficiencia logística y brindar información verificable y optimizada para joyerías y compradores. Permitimos validar el origen de cada mineral para ofrecer productos con garantía de calidad superior.</p>
-    <div class="mission-box"><h3>Misión</h3><p>Desarrollar tecnologías de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales, asegurando su autenticidad y promoviendo activamente la responsabilidad social de la industria.</p></div>
-    <div class="mission-box"><h3>Visión</h3><p>Consolidarnos como la empresa líder en trazabilidad minera en América Latina, conectando toda la cadena de valor con información confiable, inmutable y verificable.</p></div>
+  <main class="container static-page reveal">
+    <p data-i18n="about.p1">Somos MINEX, una startup tecnol&oacute;gica dedicada a la industria minera, enfocada en revolucionar la cadena de suministro mediante nuestra plataforma OpalTrace.</p>
+    <p data-i18n="about.p2">A trav&eacute;s de OpalTrace ayudamos a las empresas mineras a maximizar su eficiencia log&iacute;stica y brindar informaci&oacute;n verificable para joyer&iacute;as y compradores.</p>
+    <div class="mission-box"><h3 data-i18n="about.mission">Misi&oacute;n</h3><p data-i18n="about.missionText">Desarrollar tecnolog&iacute;as de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales, asegurando su autenticidad.</p></div>
+    <div class="mission-box"><h3 data-i18n="about.vision">Visi&oacute;n</h3><p data-i18n="about.visionText">Consolidarnos como la empresa l&iacute;der en trazabilidad minera en Am&eacute;rica Latina, conectando toda la cadena de valor con informaci&oacute;n confiable.</p></div>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="index.html">Inicio</a><a href="contacto.html">Contáctanos</a><a href="privacidad.html">Políticas de Privacidad</a><a href="terminos.html">Términos y Condiciones</a></div></div></footer>
+  <footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="index.html" data-i18n="footer.home">Inicio</a><a href="contacto.html" data-i18n="footer.contact">Cont&aacute;ctanos</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a></div></div></footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

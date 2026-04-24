@@ -1,94 +1,95 @@
-<!doctype html>
+ï»¿<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpalTrace | Landing</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body data-page="index" data-title-key="index.title">
   <header class="hero">
     <nav class="navbar container">
       <div class="brand">OpalTrace <span>DE MINEX</span></div>
-      <ul>
-        <li><a href="#como">¿Cómo funciona?</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="contacto.html">Iniciar Sesión</a></li>
-        <li><a class="btn-nav" href="contacto.html">Registrarse</a></li>
-        <li><a href="#">ES</a></li>
+      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#como" data-i18n="nav.how">&iquest;C&oacute;mo funciona?</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesi&oacute;n</a></li>
+        <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
+        <li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li>
       </ul>
     </nav>
-    <div class="container hero-content">
-      <h1>Cada mineral tiene una historia. OpalTrace la hace visible.</h1>
-      <p>OpalTrace, la plataforma de Minex que integra IoT, inteligencia artificial y validación para garantizar autenticidad, eficiencia y transparencia en toda la cadena minera.</p>
-      <a href="contacto.html" class="btn">Descubre más</a>
+    <div class="container hero-content reveal">
+      <h1 data-i18n="index.hero.title">Cada mineral tiene una historia. OpalTrace la hace visible.</h1>
+      <p data-i18n="index.hero.desc">OpalTrace, la plataforma de Minex que integra IoT, inteligencia artificial y validaci&oacute;n para garantizar autenticidad, eficiencia y transparencia en toda la cadena minera.</p>
+      <a href="contacto.html" class="btn" data-i18n="index.hero.cta">Descubre m&aacute;s</a>
     </div>
   </header>
 
   <main>
-    <section class="section container">
-      <h2>Lo que diferencia a OpalTrace</h2>
-      <p class="section-sub">Tres pilares tecnológicos que hacen de cada mineral una historia verificable.</p>
+    <section class="section container reveal">
+      <h2 data-i18n="index.diff.title">Lo que diferencia a OpalTrace</h2>
+      <p class="section-sub" data-i18n="index.diff.sub">Tres pilares tecnol&oacute;gicos que hacen de cada mineral una historia verificable.</p>
       <div class="cards-3">
         <article class="card">
-          <h3>Trazabilidad total</h3>
-          <p>Sistema completo de seguimiento desde la extracción hasta el comprador final.</p>
-          <ul><li>Cadena de custodia verificable</li><li>Registro GPS por lote</li><li>Certificados descargables</li></ul>
+          <h3 data-i18n="index.diff.c1t">Trazabilidad total</h3>
+          <p data-i18n="index.diff.c1d">Sistema completo de seguimiento desde la extracci&oacute;n hasta el comprador final.</p>
+          <ul><li data-i18n="index.diff.c1l1">Cadena de custodia verificable</li><li data-i18n="index.diff.c1l2">Registro GPS por lote</li><li data-i18n="index.diff.c1l3">Certificados descargables</li></ul>
         </article>
         <article class="card">
-          <h3>Certificación de origen</h3>
-          <p>Emisión de certificados digitales con trazabilidad completa desde la mina.</p>
-          <ul><li>Certificados con código QR</li><li>Soporte de auditoría</li><li>API de proveedores</li></ul>
+          <h3 data-i18n="index.diff.c2t">Certificaci&oacute;n de origen</h3>
+          <p data-i18n="index.diff.c2d">Emisi&oacute;n de certificados digitales con trazabilidad completa desde la mina.</p>
+          <ul><li data-i18n="index.diff.c2l1">Certificados con c&oacute;digo QR</li><li data-i18n="index.diff.c2l2">Soporte de auditor&iacute;a</li><li data-i18n="index.diff.c2l3">API de proveedores</li></ul>
         </article>
         <article class="card">
-          <h3>Cumplimiento ESG</h3>
-          <p>Evaluación y monitoreo de prácticas ambientales, sociales y de gobernanza.</p>
-          <ul><li>Auditoría ambiental</li><li>Reportes ESG</li><li>Certificación de cumplimiento</li></ul>
+          <h3 data-i18n="index.diff.c3t">Cumplimiento ESG</h3>
+          <p data-i18n="index.diff.c3d">Evaluaci&oacute;n y monitoreo de pr&aacute;cticas ambientales, sociales y de gobernanza.</p>
+          <ul><li data-i18n="index.diff.c3l1">Auditor&iacute;a ambiental</li><li data-i18n="index.diff.c3l2">Reportes ESG</li><li data-i18n="index.diff.c3l3">Certificaci&oacute;n de cumplimiento</li></ul>
         </article>
       </div>
     </section>
 
     <section id="como" class="section section-green">
-      <div class="container">
-        <h2>¿Cómo funciona OpalTrace?</h2>
-        <p class="section-sub light">Del sensor en la mina al certificado en la joyería.</p>
+      <div class="container reveal">
+        <h2 data-i18n="index.how.title">&iquest;C&oacute;mo funciona OpalTrace?</h2>
+        <p class="section-sub light" data-i18n="index.how.sub">Del sensor en la mina al certificado en la joyer&iacute;a.</p>
         <div class="steps">
-          <article><span>1</span><div><h4>Registro de operación</h4><p>La empresa minera registra su operación con datos IoT, coordenadas GPS y prácticas ESG.</p></div></article>
-          <article><span>2</span><div><h4>Creación de lote IoT</h4><p>Se genera un lote con sensores IoT y un código de certificado único.</p></div></article>
-          <article><span>3</span><div><h4>Cadena de custodia</h4><p>Cada transferencia se registra automáticamente: transportista, laboratorio, refinería y joyería.</p></div></article>
-          <article><span>4</span><div><h4>Certificación final</h4><p>Emisión del certificado OpalTrace en PDF con código único y validación digital.</p></div></article>
+          <article><span>1</span><div><h4 data-i18n="index.how.s1t">Registro de operaci&oacute;n</h4><p data-i18n="index.how.s1d">La empresa minera registra su operaci&oacute;n con datos IoT, coordenadas GPS y pr&aacute;cticas ESG.</p></div></article>
+          <article><span>2</span><div><h4 data-i18n="index.how.s2t">Creaci&oacute;n de lote IoT</h4><p data-i18n="index.how.s2d">Se genera un lote con sensores IoT y un c&oacute;digo de certificado &uacute;nico.</p></div></article>
+          <article><span>3</span><div><h4 data-i18n="index.how.s3t">Cadena de custodia</h4><p data-i18n="index.how.s3d">Cada transferencia se registra autom&aacute;ticamente: transportista, laboratorio, refiner&iacute;a y joyer&iacute;a.</p></div></article>
+          <article><span>4</span><div><h4 data-i18n="index.how.s4t">Certificaci&oacute;n final</h4><p data-i18n="index.how.s4d">Emisi&oacute;n del certificado OpalTrace en PDF con c&oacute;digo &uacute;nico y validaci&oacute;n digital.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section container">
-      <h2>Nuestros clientes</h2>
+    <section class="section container reveal">
+      <h2 data-i18n="index.clients.title">Nuestros clientes</h2>
       <div class="client-grid">
         <article class="client-card">
-          <div><h3>Productores mineros</h3><p>Certifica tu operación, accede a mercados internacionales y demuestra tu compromiso con la minería responsable.</p><a class="btn" href="contacto.html">Registrar mi operación</a></div>
+          <div><h3 data-i18n="index.clients.c1t">Productores mineros</h3><p data-i18n="index.clients.c1d">Certifica tu operaci&oacute;n, accede a mercados internacionales y demuestra tu compromiso con la miner&iacute;a responsable.</p><a class="btn" href="contacto.html" data-i18n="index.clients.c1b">Registrar mi operaci&oacute;n</a></div>
           <img src="assets/images/c__Users_santi_AppData_Roaming_Cursor_User_workspaceStorage_59504b5ebe1c433df7225e854ebbe0be_images_image-f1f39d3d-7005-4908-b6bf-1800fe210786.png" alt="Productores mineros">
         </article>
         <article class="client-card">
-          <div><h3>Joyerías</h3><p>Verifica la autenticidad de los minerales que compras y emite certificados OpalTrace con código único para tus joyas.</p><a class="btn btn-green" href="contacto.html">Acceder como joyería</a></div>
-          <img src="assets/images/c__Users_santi_AppData_Roaming_Cursor_User_workspaceStorage_59504b5ebe1c433df7225e854ebbe0be_images_image-0a07592c-fa02-4f36-b6da-e71b2e8c8e26.png" alt="Joyerías">
+          <div><h3 data-i18n="index.clients.c2t">Joyer&iacute;as</h3><p data-i18n="index.clients.c2d">Verifica la autenticidad de los minerales que compras y emite certificados OpalTrace con c&oacute;digo &uacute;nico para tus joyas.</p><a class="btn btn-green" href="contacto.html" data-i18n="index.clients.c2b">Acceder como joyer&iacute;a</a></div>
+          <img src="assets/images/c__Users_santi_AppData_Roaming_Cursor_User_workspaceStorage_59504b5ebe1c433df7225e854ebbe0be_images_image-0a07592c-fa02-4f36-b6da-e71b2e8c8e26.png" alt="Joyerias">
         </article>
         <article class="client-card">
-          <div><h3>Compradores finales</h3><p>Ingresa el código brindado por la joyería y verifica que el mineral sea auténtico y extraído responsablemente.</p><a class="btn" href="contacto.html">Ingresar código</a></div>
+          <div><h3 data-i18n="index.clients.c3t">Compradores finales</h3><p data-i18n="index.clients.c3d">Ingresa el c&oacute;digo brindado por la joyer&iacute;a y verifica que el mineral sea aut&eacute;ntico y extra&iacute;do responsablemente.</p><a class="btn" href="contacto.html" data-i18n="index.clients.c3b">Ingresar c&oacute;digo</a></div>
           <img src="assets/images/c__Users_santi_AppData_Roaming_Cursor_User_workspaceStorage_59504b5ebe1c433df7225e854ebbe0be_images_image-a3c84ae0-0b01-4d01-8b21-b77e637fde4a.png" alt="Compradores finales">
         </article>
       </div>
     </section>
 
     <section class="section section-green">
-      <div class="container">
-        <h2>Elige tu plan</h2>
+      <div class="container reveal">
+        <h2 data-i18n="index.plans.title">Elige tu plan</h2>
         <div class="plans">
-          <article class="plan"><small>IDEAL PARA COMPRADORES FINALES</small><h3>Silver</h3><p class="price">$15<span>/mes</span></p><ul><li>Verificación por código de certificado</li><li>Ver trazabilidad completa</li><li>Descargar certificado digital</li></ul><a class="btn" href="contacto.html">Suscríbete</a></article>
-          <article class="plan"><small>IDEAL PARA JOYERÍAS Y RETAILERS</small><h3>Gold</h3><p class="price">$90<span>/mes</span></p><ul><li>Todo el plan FREE</li><li>Emisión ilimitada de certificados</li><li>Panel de proveedores</li><li>API para tienda online</li></ul><a class="btn" href="contacto.html">Suscríbete</a></article>
-          <article class="plan featured"><small>IDEAL PARA OPERACIONES MINERAS</small><h3>Platinum</h3><p class="price">$150<span>/mes</span></p><ul><li>Todo el plan PRO</li><li>Integración IoT ilimitada</li><li>Dashboard operacional avanzado</li><li>SLA dedicado 24/7</li></ul><a class="btn btn-alt" href="contacto.html">Suscríbete</a></article>
+          <article class="plan"><small data-i18n="index.plans.shead">IDEAL PARA COMPRADORES FINALES</small><h3>Silver</h3><p class="price">$15<span data-i18n="common.perMonth">/mes</span></p><ul><li data-i18n="index.plans.s1">Verificaci&oacute;n por c&oacute;digo de certificado</li><li data-i18n="index.plans.s2">Ver trazabilidad completa</li><li data-i18n="index.plans.s3">Descargar certificado digital</li></ul><a class="btn" href="contacto.html" data-i18n="common.subscribe">Suscr&iacute;bete</a></article>
+          <article class="plan"><small data-i18n="index.plans.ghead">IDEAL PARA JOYERIAS Y RETAILERS</small><h3>Gold</h3><p class="price">$90<span data-i18n="common.perMonth">/mes</span></p><ul><li data-i18n="index.plans.g1">Todo el plan FREE</li><li data-i18n="index.plans.g2">Emisi&oacute;n ilimitada de certificados</li><li data-i18n="index.plans.g3">Panel de proveedores</li><li data-i18n="index.plans.g4">API para tienda online</li></ul><a class="btn" href="contacto.html" data-i18n="common.subscribe">Suscr&iacute;bete</a></article>
+          <article class="plan featured"><small data-i18n="index.plans.phead">IDEAL PARA OPERACIONES MINERAS</small><h3>Platinum</h3><p class="price">$150<span data-i18n="common.perMonth">/mes</span></p><ul><li data-i18n="index.plans.p1">Todo el plan PRO</li><li data-i18n="index.plans.p2">Integraci&oacute;n IoT ilimitada</li><li data-i18n="index.plans.p3">Dashboard operacional avanzado</li><li data-i18n="index.plans.p4">SLA dedicado 24/7</li></ul><a class="btn btn-alt" href="contacto.html" data-i18n="common.subscribe">Suscr&iacute;bete</a></article>
         </div>
       </div>
     </section>
@@ -96,9 +97,11 @@
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div><div class="brand">OpalTrace <span>DE MINEX</span></div><p>Plataforma de certificación y trazabilidad de minerales responsable en Perú.</p></div>
-      <div class="footer-links"><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contáctanos</a><a href="privacidad.html">Políticas de Privacidad</a><a href="terminos.html">Términos y Condiciones</a></div>
+      <div><div class="brand">OpalTrace <span>DE MINEX</span></div><p data-i18n="footer.desc">Plataforma de certificaci&oacute;n y trazabilidad de minerales responsable en Peru.</p></div>
+      <div class="footer-links"><a href="nosotros.html" data-i18n="nav.about">Nosotros</a><a href="contacto.html" data-i18n="footer.contact">Cont&aacute;ctanos</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a></div>
     </div>
   </footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
