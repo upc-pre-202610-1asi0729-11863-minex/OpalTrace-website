@@ -1,2 +1,2 @@
-# SmartChain-landing
-SmartChain static landing page.
+# OpalTarce-landing
+OpalTrace static landing page.
