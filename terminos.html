@@ -1,14 +1,162 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Terminos y Condiciones</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos y Condiciones | OpalTrace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body data-page="terms" data-title-key="terms.title">
-<header class="subhero legal-hero"><nav class="navbar container"><div class="brand">OpalTrace <span>DE MINEX</span></div><button class="menu-toggle" aria-label="Abrir menu">&#9776;</button><ul class="nav-links"><li><a href="index.html" data-i18n="footer.home">Inicio</a></li><li><a href="contacto.html" data-i18n="terms.contact">Contacto</a></li><li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li></ul></nav><div class="container reveal"><h1 data-i18n="terms.h1">T&eacute;rminos y Condiciones</h1></div></header>
-<main class="container section legal-card reveal">
-<p><strong data-i18n="terms.updated">&Uacute;ltima actualizaci&oacute;n:</strong> <span data-i18n="terms.date">Abril 2026.</span></p>
-<p data-i18n="terms.p1">Al acceder y utilizar la plataforma web OpalTrace, aceptas los presentes T&eacute;rminos y Condiciones de uso.</p>
-<ol><li data-i18n="terms.l1">Licencia de servicio: uso personal y corporativo autorizado con cuenta v&aacute;lida.</li><li data-i18n="terms.l2">Propiedad intelectual: el contenido, dise&ntilde;os y documentaci&oacute;n pertenecen a MINEX.</li><li data-i18n="terms.l3">Pago y facturaci&oacute;n: los planes se facturan mensualmente y no incluyen impuestos aplicables.</li><li data-i18n="terms.l4">Privacidad y protecci&oacute;n de datos: aplicamos medidas de seguridad y tratamiento responsable.</li><li data-i18n="terms.l5">Disponibilidad del servicio: buscamos disponibilidad continua, con mantenimiento programado.</li><li data-i18n="terms.l6">Jurisdicci&oacute;n: estos t&eacute;rminos se rigen por la legislaci&oacute;n peruana.</li></ol>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="nosotros.html" data-i18n="nav.about">Nosotros</a><a href="contacto.html" data-i18n="footer.contact">Cont&aacute;ctanos</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="index.html" data-i18n="footer.home">Inicio</a></div></div></footer>
-<script src="i18n.js"></script>
-<script src="script.js"></script>
-</body></html>
+  <header class="subhero legal-hero">
+    <nav class="navbar container">
+      <div class="brand-nav"></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-mobile-top">
+          <div class="brand-nav"></div>
+          <button class="menu-close" id="menu-close" aria-label="Cerrar menú">&#10005;</button>
+        </li>
+        <li class="nav-dropdown">
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#diferencia" data-i18n="nav.diff">Lo que nos diferencia</a></li>
+            <li><a href="index.html#como" data-i18n="nav.how">¿Cómo funciona?</a></li>
+            <li><a href="index.html#clientes" data-i18n="nav.clients">Nuestros clientes</a></li>
+            <li><a href="index.html#planes" data-i18n="nav.plans">Planes</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html" data-i18n="footer.contact">Contáctanos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesión</a></li>
+        <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
+        <li class="lang-switch lang-switch-desktop">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select" id="lang-select" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </li>
+        <li class="nav-mobile-bottom">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select lang-select-mobile" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="nav-mobile-social">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+          <p class="nav-mobile-copyright">© 2026 MINEX. Todos los derechos reservados.</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="container reveal"><h1 data-i18n="terms.h1">Términos y Condiciones</h1></div>
+  </header>
+
+  <section class="legal-section">
+    <div class="container">
+      <div class="legal-card reveal">
+        <p class="terms-intro" data-i18n="terms.intro1">Última actualización: Abril 2026  |  Empresa: MINEX | Plataforma OpalTrace</p>
+        <p class="terms-intro" data-i18n="terms.intro2">Al acceder o utilizar la plataforma web OpalTrace (en adelante, "la Plataforma"), operada por MINEX, usted acepta quedar vinculado por los presentes Términos y Condiciones de Uso. Si no está de acuerdo con alguna de las condiciones aquí establecidas, le solicitamos que se abstenga de utilizar la Plataforma.</p>
+        <ol>
+          <li>
+            <strong data-i18n="terms.l1t">Descripción del Servicio</strong>
+            <p data-i18n="terms.l1b">OpalTrace es una plataforma SaaS de trazabilidad y certificación de minerales responsables que permite registrar, gestionar y verificar la cadena de custodia de minerales desde su extracción hasta su venta al consumidor final. Los servicios incluyen, entre otros: registro de lotes de extracción, gestión logística, certificación ética de minerales, generación de códigos QR y Journey Map público para el consumidor.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l2t">Usuarios y Roles</strong>
+            <p data-i18n="terms.l2b">El acceso a la Plataforma está condicionado al rol asignado. Los roles disponibles son: Operador Minero, Supervisor, Conductor de Transporte, Operario de Refinería, Joyero, Consumidor y Administrador. Cada rol tiene permisos definidos y el usuario es responsable de toda actividad realizada bajo sus credenciales.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l3t">Registro de Cuenta</strong>
+            <p data-i18n="terms.l3b">Para acceder a las funcionalidades privadas de la Plataforma, el usuario debe registrarse proporcionando nombre, apellidos, correo electrónico válido y contraseña de mínimo 8 caracteres, y aceptar los presentes Términos. El usuario es responsable de mantener la confidencialidad de sus credenciales. Tras 5 intentos fallidos de inicio de sesión, la cuenta quedará bloqueada temporalmente. Los Administradores deben activar la verificación en dos pasos (2FA).</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l4t">Planes de Suscripción</strong>
+            <p data-i18n="terms.l4b">OpalTrace ofrece tres planes de suscripción: Básico, Profesional y Empresarial, con acceso escalonado a funcionalidades. La suscripción se activa de forma inmediata tras la confirmación del plan contratado. En caso de reducción de plan (downgrade), el cambio se aplicará al finalizar el ciclo de facturación activo, quedando inaccesibles las funcionalidades exclusivas del plan anterior. MINEX se reserva el derecho de modificar los precios y características de los planes con notificación previa de al menos 30 días.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l5t">Uso Aceptable</strong>
+            <p data-i18n="terms.l5intro">El usuario se compromete a utilizar la Plataforma únicamente para fines lícitos y de acuerdo con su propósito de trazabilidad minera responsable. Queda expresamente prohibido:</p>
+            <ul>
+              <li data-i18n="terms.l5s1">Registrar información falsa, adulterada o engañosa en los lotes de extracción o certificados.</li>
+              <li data-i18n="terms.l5s2">Intentar mezclar intencionalmente material certificado con material no certificado para obtener certificaciones fraudulentas.</li>
+              <li data-i18n="terms.l5s3">Acceder o intentar acceder a cuentas, módulos o datos que no correspondan a su rol asignado.</li>
+              <li data-i18n="terms.l5s4">Reproducir, distribuir o explotar comercialmente cualquier componente de la Plataforma sin autorización escrita de MINEX.</li>
+              <li data-i18n="terms.l5s5">Introducir código malicioso, realizar ataques de denegación de servicio o cualquier acción que perjudique el funcionamiento de la Plataforma.</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-i18n="terms.l6t">Propiedad Intelectual</strong>
+            <p data-i18n="terms.l6b">Todos los contenidos, diseños, algoritmos, logotipos, marca OpalTrace y elementos de la Plataforma son propiedad exclusiva de MINEX o de sus licenciantes. El uso de la Plataforma no otorga al usuario ningún derecho de propiedad intelectual sobre dichos elementos.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l7t">Evidencias Fotográficas y Datos Subidos</strong>
+            <p data-i18n="terms.l7b">Al cargar fotografías u otros archivos como evidencia en la Plataforma, el usuario declara tener los derechos necesarios sobre dicho contenido y autoriza a MINEX a almacenarlo en servicios de nube (AWS S3 o equivalente) con el fin exclusivo de proveer el servicio de trazabilidad. Los archivos almacenados estarán disponibles mediante URLs firmadas con expiración de 24 horas.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l8t">Limitación de Responsabilidad</strong>
+            <p data-i18n="terms.l8b">MINEX no será responsable por daños directos, indirectos, incidentales o consecuentes derivados del uso o la imposibilidad de uso de la Plataforma, incluyendo pérdidas de datos, interrupciones del servicio o errores en la información registrada por los usuarios. La exactitud de los datos de trazabilidad depende de la veracidad de la información introducida por los operadores.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l9t">Modificaciones</strong>
+            <p data-i18n="terms.l9b">MINEX se reserva el derecho de modificar los presentes Términos en cualquier momento. Los cambios serán notificados mediante correo electrónico y/o aviso en la Plataforma con al menos 15 días de anticipación. El uso continuado de la Plataforma tras la notificación implica la aceptación de los nuevos términos.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l10t">Ley Aplicable y Jurisdicción</strong>
+            <p data-i18n="terms.l10b">Los presentes Términos se rigen por la legislación vigente en la República del Perú. Cualquier controversia derivada de su interpretación o cumplimiento será sometida a los juzgados y tribunales competentes de la ciudad de Lima, Perú.</p>
+          </li>
+          <li>
+            <strong data-i18n="terms.l11t">Contacto</strong>
+            <p data-i18n="terms.l11b">Para consultas relacionadas con estos Términos, puede contactarnos a través del formulario de contacto en nuestra Landing Page o escribirnos a: legal@minex.pe</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-footer"></div>
+        <p data-i18n="footer.desc">Plataforma de certificación y trazabilidad de minerales responsable en Peru.</p>
+      </div>
+      <div class="footer-links">
+        <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+        <a href="contacto.html" data-i18n="footer.contact">Contáctanos</a>
+        <a href="privacidad.html" data-i18n="footer.privacy">Políticas de Privacidad</a>
+        <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+      </div>
+      <div class="footer-right">
+        <div class="lang-select-wrap">
+          <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <select class="lang-select lang-select-footer" aria-label="Idioma">
+            <option value="es">ESPAÑOL</option>
+            <option value="en">ENGLISH</option>
+          </select>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" data-i18n="footer.copyright">© 2026 MINEX. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
