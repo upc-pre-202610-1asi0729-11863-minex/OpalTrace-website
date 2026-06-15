@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -6,30 +6,130 @@
   <title>Nosotros | OpalTrace</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Questrial&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="about" data-title-key="about.title">
   <header class="subhero about-hero">
     <nav class="navbar container">
-      <div class="brand">OpalTrace <span>DE MINEX</span></div>
-      <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="index.html#como" data-i18n="nav.how">&iquest;C&oacute;mo funciona?</a></li>
-        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesi&oacute;n</a></li>
+      <div class="brand-nav"></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-mobile-top">
+          <div class="brand-nav"></div>
+          <button class="menu-close" id="menu-close" aria-label="Cerrar menú">&#10005;</button>
+        </li>
+        <li class="nav-dropdown">
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#diferencia" data-i18n="nav.diff">Lo que nos diferencia</a></li>
+            <li><a href="index.html#como" data-i18n="nav.how">¿Cómo funciona?</a></li>
+            <li><a href="index.html#clientes" data-i18n="nav.clients">Nuestros clientes</a></li>
+            <li><a href="index.html#planes" data-i18n="nav.plans">Planes</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html" data-i18n="footer.contact">Contáctanos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesión</a></li>
         <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
-        <li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li>
+        <li class="lang-switch lang-switch-desktop">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select" id="lang-select" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </li>
+        <li class="nav-mobile-bottom">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select lang-select-mobile" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="nav-mobile-social">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+          <p class="nav-mobile-copyright">© 2026 MINEX. Todos los derechos reservados.</p>
+        </li>
       </ul>
     </nav>
     <div class="container reveal"><h1 data-i18n="about.h1">Nosotros</h1></div>
   </header>
+
   <main class="container static-page reveal">
-    <p data-i18n="about.p1">Somos MINEX, una startup tecnol&oacute;gica dedicada a la industria minera, enfocada en revolucionar la cadena de suministro mediante nuestra plataforma OpalTrace.</p>
-    <p data-i18n="about.p2">A trav&eacute;s de OpalTrace ayudamos a las empresas mineras a maximizar su eficiencia log&iacute;stica y brindar informaci&oacute;n verificable para joyer&iacute;as y compradores.</p>
-    <div class="mission-box"><h3 data-i18n="about.mission">Misi&oacute;n</h3><p data-i18n="about.missionText">Desarrollar tecnolog&iacute;as de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales, asegurando su autenticidad.</p></div>
-    <div class="mission-box"><h3 data-i18n="about.vision">Visi&oacute;n</h3><p data-i18n="about.visionText">Consolidarnos como la empresa l&iacute;der en trazabilidad minera en Am&eacute;rica Latina, conectando toda la cadena de valor con informaci&oacute;n confiable.</p></div>
+    <div class="about-layout">
+      <div class="about-text">
+        <p><span data-i18n="about.p1pre">Somos </span><span class="brand-name-highlight">MINEX</span><span data-i18n="about.p1post">, una startup tecnológica dedicada a la industria minera, enfocada en revolucionar la cadena de suministro mediante nuestra plataforma OpalTrace. Nuestro objetivo es monitorear, examinar y certificar el recorrido de los minerales desde su extracción hasta el producto final, integrando tecnología IoT, soluciones web e Inteligencia Artificial.</span></p>
+        <p data-i18n="about.p2">A través de OpalTrace, ayudamos a las empresas mineras a maximizar su eficiencia logística, minimizando pérdidas y optimizando la gestión operativa con datos en tiempo real. Para el sector de las joyerías, proporcionamos herramientas imprescindibles para validar el origen de los materiales, permitiéndoles ofrecer productos con garantía de calidad superior.</p>
+        <p data-i18n="about.p3">OpalTrace asegura al consumidor final la autenticidad de cada pieza, facilitando una transparencia total de la información. Esto fomenta un ecosistema de compra consciente, ética y basada en la confianza.</p>
+      </div>
+      <div class="about-video-placeholder">
+        <a href="#" aria-label="Ver video en YouTube" style="color:#74a79c;font-family:'Poppins',sans-serif;font-size:.95rem;text-align:center;text-decoration:none;">
+          <svg viewBox="0 0 64 64" width="56" height="56" fill="none" style="display:block;margin:0 auto 0.6rem"><circle cx="32" cy="32" r="32" fill="#e8f0ee"/><polygon points="26,20 50,32 26,44" fill="#74a79c"/></svg>
+          Ver video
+        </a>
+      </div>
+    </div>
+
+    <div class="mission-box">
+      <div class="mission-box-content">
+        <h3 data-i18n="about.mission">Misión</h3>
+        <p data-i18n="about.missionText">Desarrollar tecnologías de vanguardia que permitan rastrear, examinar y validar el trayecto de los minerales desde la mina hasta el consumidor, asegurando la autenticidad de los productos y promoviendo activamente la responsabilidad social en la industria.</p>
+      </div>
+      <div class="mission-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+      </div>
+    </div>
+
+    <div class="mission-box">
+      <div class="mission-box-content">
+        <h3 data-i18n="about.vision">Visión</h3>
+        <p data-i18n="about.visionText">Consolidarnos como la empresa líder en trazabilidad minera en América Latina, conectando a toda la cadena de valor: desde la mina hasta el consumidor; con información confiable, inmutable y verificable.</p>
+      </div>
+      <div class="mission-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" stroke-width="2"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 1 7 7c0 2.5-1 4.5-3 6l-1 3H9l-1-3c-2-1.5-3-3.5-3-6a7 7 0 0 1 7-7z"/></svg>
+      </div>
+    </div>
   </main>
-  <footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="index.html" data-i18n="footer.home">Inicio</a><a href="contacto.html" data-i18n="footer.contact">Cont&aacute;ctanos</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a></div></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-footer"></div>
+        <p data-i18n="footer.desc">Plataforma de certificación y trazabilidad de minerales responsable en Peru.</p>
+      </div>
+      <div class="footer-links">
+        <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+        <a href="contacto.html" data-i18n="footer.contact">Contáctanos</a>
+        <a href="privacidad.html" data-i18n="footer.privacy">Políticas de Privacidad</a>
+        <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+      </div>
+      <div class="footer-right">
+        <div class="lang-select-wrap">
+          <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <select class="lang-select lang-select-footer" aria-label="Idioma">
+            <option value="es">ESPAÑOL</option>
+            <option value="en">ENGLISH</option>
+          </select>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" data-i18n="footer.copyright">© 2026 MINEX. Todos los derechos reservados.</div>
+    </div>
+  </footer>
   <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
