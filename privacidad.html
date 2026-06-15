@@ -1,14 +1,181 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Politicas de Privacidad</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Políticas de Privacidad | OpalTrace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body data-page="privacy" data-title-key="privacy.title">
-<header class="subhero legal-hero"><nav class="navbar container"><div class="brand">OpalTrace <span>DE MINEX</span></div><button class="menu-toggle" aria-label="Abrir menu">&#9776;</button><ul class="nav-links"><li><a href="index.html" data-i18n="footer.home">Inicio</a></li><li><a href="contacto.html" data-i18n="terms.contact">Contacto</a></li><li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li></ul></nav><div class="container reveal"><h1 data-i18n="privacy.h1">Pol&iacute;ticas de Privacidad</h1></div></header>
-<main class="container section legal-card reveal">
-<p><strong data-i18n="terms.updated">&Uacute;ltima actualizaci&oacute;n:</strong> <span data-i18n="terms.date">Abril 2026.</span></p>
-<p data-i18n="privacy.p1">MINEX y su plataforma OpalTrace se comprometen a proteger la privacidad de los usuarios conforme a la Ley 29733 del Peru.</p>
-<ol><li data-i18n="privacy.l1">Datos recolectados: identificaci&oacute;n, contacto, registros operativos y m&eacute;tricas t&eacute;cnicas.</li><li data-i18n="privacy.l2">Uso de informaci&oacute;n: operaci&oacute;n del servicio, validaci&oacute;n de certificados y soporte.</li><li data-i18n="privacy.l3">Seguridad: cifrado, controles de acceso y monitoreo continuo.</li><li data-i18n="privacy.l4">Derechos ARCO: puedes solicitar acceso, rectificaci&oacute;n, cancelaci&oacute;n y oposici&oacute;n.</li><li data-i18n="privacy.l5">Conservaci&oacute;n: los datos se almacenan solo el tiempo necesario para fines legales y operativos.</li></ol>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="nosotros.html" data-i18n="nav.about">Nosotros</a><a href="contacto.html" data-i18n="footer.contact">Cont&aacute;ctanos</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a><a href="index.html" data-i18n="footer.home">Inicio</a></div></div></footer>
-<script src="i18n.js"></script>
-<script src="script.js"></script>
-</body></html>
+  <header class="subhero legal-hero">
+    <nav class="navbar container">
+      <div class="brand-nav"></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-mobile-top">
+          <div class="brand-nav"></div>
+          <button class="menu-close" id="menu-close" aria-label="Cerrar menú">&#10005;</button>
+        </li>
+        <li class="nav-dropdown">
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#diferencia" data-i18n="nav.diff">Lo que nos diferencia</a></li>
+            <li><a href="index.html#como" data-i18n="nav.how">¿Cómo funciona?</a></li>
+            <li><a href="index.html#clientes" data-i18n="nav.clients">Nuestros clientes</a></li>
+            <li><a href="index.html#planes" data-i18n="nav.plans">Planes</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html" data-i18n="footer.contact">Contáctanos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesión</a></li>
+        <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
+        <li class="lang-switch lang-switch-desktop">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select" id="lang-select" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </li>
+        <li class="nav-mobile-bottom">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select lang-select-mobile" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="nav-mobile-social">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+          <p class="nav-mobile-copyright">© 2026 MINEX. Todos los derechos reservados.</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="container reveal"><h1 data-i18n="privacy.h1">Políticas de Privacidad</h1></div>
+  </header>
+
+  <section class="legal-section">
+    <div class="container">
+      <div class="legal-card reveal">
+        <p class="terms-intro" data-i18n="privacy.intro1">Última actualización: Abril 2026  |  Responsable del tratamiento: MINEX | Plataforma OpalTrace</p>
+        <p class="terms-intro" data-i18n="privacy.intro2">MINEX, a través de la plataforma OpalTrace, se compromete a proteger la privacidad de sus usuarios y a tratar sus datos personales conforme a la Ley N.° 29733 — Ley de Protección de Datos Personales del Perú y su reglamento. Esta Política describe qué datos recopilamos, cómo los usamos, con quién los compartimos y cuáles son sus derechos.</p>
+        <ol>
+          <li>
+            <strong data-i18n="privacy.l1t">Datos que Recopilamos</strong>
+            <p data-i18n="privacy.l1intro">Según el tipo de usuario, recopilamos los siguientes datos:</p>
+            <ul>
+              <li data-i18n="privacy.l1s1">Datos de registro de cuenta: Nombre, apellidos, correo electrónico y contraseña (almacenada con hash seguro). Obligatorios para el acceso a la Plataforma.</li>
+              <li data-i18n="privacy.l1s2">Datos operativos de trazabilidad: Coordenadas GPS capturadas en el registro de lotes y escaneo de custodia, peso y tipo de mineral, fechas y estados de lotes, fotografías de evidencia adjuntadas por el operador, e información del conductor asociada a cada transferencia de custodia.</li>
+              <li data-i18n="privacy.l1s3">Datos de navegación: Dirección IP, tipo de dispositivo y navegador, páginas visitadas dentro de la Plataforma y tiempos de sesión. Estos datos se recogen de forma anónima con fines de seguridad y mejora del servicio.</li>
+              <li data-i18n="privacy.l1s4">Datos del consumidor final: El consumidor que accede al Journey Map público mediante QR no requiere registro. No se recopilan datos personales identificables en este acceso.</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l2t">Finalidad del Tratamiento</strong>
+            <p data-i18n="privacy.l2intro">Los datos recopilados son utilizados exclusivamente para:</p>
+            <ul>
+              <li data-i18n="privacy.l2s1">Proveer y mantener el servicio de trazabilidad de OpalTrace.</li>
+              <li data-i18n="privacy.l2s2">Autenticar y gestionar el acceso de usuarios según su rol.</li>
+              <li data-i18n="privacy.l2s3">Generar certificados de trazabilidad con validez documental.</li>
+              <li data-i18n="privacy.l2s4">Emitir notificaciones operativas (alertas de merma, recuperación de contraseña, anomalías críticas) mediante correo electrónico.</li>
+              <li data-i18n="privacy.l2s5">Cumplir con obligaciones legales, regulatorias y de auditoría aplicables a la industria minera.</li>
+              <li data-i18n="privacy.l2s6">Mejorar la experiencia de uso y el rendimiento de la Plataforma.</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l3t">Base Legal del Tratamiento</strong>
+            <p data-i18n="privacy.l3intro">El tratamiento de datos personales se sustenta en las siguientes bases legales:</p>
+            <ul>
+              <li data-i18n="privacy.l3s1">Consentimiento: otorgado por el usuario al aceptar los presentes Términos y Condiciones en el momento del registro.</li>
+              <li data-i18n="privacy.l3s2">Ejecución de contrato: necesario para la prestación del servicio de trazabilidad contratado.</li>
+              <li data-i18n="privacy.l3s3">Obligación legal: en casos donde la normativa minera o tributaria peruana exija la conservación de registros.</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l4t">Almacenamiento y Seguridad</strong>
+            <p data-i18n="privacy.l4b">Los datos son almacenados en servidores seguros con cifrado en tránsito (HTTPS/TLS) y en reposo. Las evidencias fotográficas se alojan en servicios de nube (AWS S3 o equivalente) con acceso restringido mediante URLs firmadas con expiración de 24 horas. Las contraseñas nunca se almacenan en texto plano; se aplican algoritmos de hashing seguros. Los tokens de autenticación (JWT) se invalidan al cerrar sesión.</p>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l5t">Compartición de Datos con Terceros</strong>
+            <p data-i18n="privacy.l5intro">MINEX no vende, alquila ni cede datos personales a terceros con fines comerciales. Los datos pueden ser compartidos únicamente con:</p>
+            <ul>
+              <li data-i18n="privacy.l5s1">Proveedores de infraestructura tecnológica (AWS, servicios SMTP/SendGrid) bajo acuerdos de confidencialidad, estrictamente para la operación del servicio.</li>
+              <li data-i18n="privacy.l5s2">Autoridades competentes, cuando así lo exija la ley peruana o una orden judicial.</li>
+            </ul>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l6t">Retención de Datos</strong>
+            <p data-i18n="privacy.l6b">Los datos de trazabilidad operativa se conservan durante el tiempo que dure la relación contractual y por un período adicional de 5 años tras la finalización, en cumplimiento de requisitos legales de auditoría minera. Las cuentas de usuario inactivas por más de 2 años podrán ser anonimizadas previa notificación. Los datos de navegación anónimos se conservan por un máximo de 12 meses.</p>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l7t">Derechos del Usuario</strong>
+            <p data-i18n="privacy.l7intro">De acuerdo con la Ley N.° 29733 y su reglamento, usted tiene derecho a:</p>
+            <ul>
+              <li data-i18n="privacy.l7s1">Acceso: conocer qué datos personales tenemos sobre usted.</li>
+              <li data-i18n="privacy.l7s2">Rectificación: solicitar la corrección de datos inexactos o incompletos.</li>
+              <li data-i18n="privacy.l7s3">Cancelación: solicitar la eliminación de sus datos cuando ya no sean necesarios para la finalidad para la que fueron recogidos.</li>
+              <li data-i18n="privacy.l7s4">Oposición: oponerse al tratamiento de sus datos en los casos previstos por la ley.</li>
+            </ul>
+            <p data-i18n="privacy.l7contact">Para ejercer cualquiera de estos derechos, puede escribirnos a: privacidad@minex.pe, indicando su nombre completo, correo registrado y el derecho que desea ejercer. Atenderemos su solicitud en un plazo máximo de 20 días hábiles.</p>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l8t">Cookies y Tecnologías de Seguimiento</strong>
+            <p data-i18n="privacy.l8b">La Plataforma puede utilizar cookies de sesión estrictamente necesarias para el funcionamiento del sistema de autenticación (JWT). No se utilizan cookies de seguimiento con fines publicitarios o de perfilamiento comercial.</p>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l9t">Cambios en esta Política</strong>
+            <p data-i18n="privacy.l9b">MINEX podrá actualizar esta Política de Privacidad. Cualquier modificación relevante será comunicada a los usuarios registrados mediante correo electrónico con al menos 15 días de anticipación. La versión vigente siempre estará disponible en el footer de la Landing Page y de la Web Application.</p>
+          </li>
+          <li>
+            <strong data-i18n="privacy.l10t">Contacto</strong>
+            <p data-i18n="privacy.l10b">Para cualquier consulta relacionada con el tratamiento de sus datos personales: MINEX — OpalTrace | Correo: privacidad@minex.pe | Lima, Perú</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-footer"></div>
+        <p data-i18n="footer.desc">Plataforma de certificación y trazabilidad de minerales responsable en Peru.</p>
+      </div>
+      <div class="footer-links">
+        <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+        <a href="contacto.html" data-i18n="footer.contact">Contáctanos</a>
+        <a href="privacidad.html" data-i18n="footer.privacy">Políticas de Privacidad</a>
+        <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+      </div>
+      <div class="footer-right">
+        <div class="lang-select-wrap">
+          <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <select class="lang-select lang-select-footer" aria-label="Idioma">
+            <option value="es">ESPAÑOL</option>
+            <option value="en">ENGLISH</option>
+          </select>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" data-i18n="footer.copyright">© 2026 MINEX. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
