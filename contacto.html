@@ -1,20 +1,115 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contactanos | OpalTrace</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contáctanos | OpalTrace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body data-page="contact" data-title-key="contact.title">
-<header class="subhero contact-hero"><nav class="navbar container"><div class="brand">OpalTrace <span>DE MINEX</span></div><button class="menu-toggle" aria-label="Abrir menu">&#9776;</button><ul class="nav-links"><li><a href="index.html" data-i18n="footer.home">Inicio</a></li><li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li><li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li><li class="lang-switch"><button type="button" class="lang-btn" data-lang="es">ES</button><button type="button" class="lang-btn" data-lang="en">EN</button></li></ul></nav><div class="container reveal"><h1 data-i18n="contact.h1">Cont&aacute;ctanos</h1></div></header>
-<main class="container section reveal">
-  <form class="contact-form">
-    <label><span data-i18n="contact.name">Nombre completo:</span><input type="text" required></label>
-    <label><span data-i18n="contact.email">Email:</span><input type="email" required></label>
-    <label><span data-i18n="contact.phone">Tel&eacute;fono:</span><input type="tel"></label>
-    <label><span data-i18n="contact.clientType">Tipo de cliente:</span><input type="text"></label>
-    <label><span data-i18n="contact.message">Mensaje:</span><textarea rows="5"></textarea></label>
-    <label class="check"><input type="checkbox"> <span data-i18n="contact.terms">Al suscribirme, acepto los T&eacute;rminos y Condiciones.</span></label>
-    <button class="btn" type="submit" data-i18n="contact.cta">&iexcl;Descubrir!</button>
-  </form>
-</main>
-<footer class="footer"><div class="container footer-grid"><div><div class="brand">OpalTrace <span>DE MINEX</span></div></div><div class="footer-links"><a href="nosotros.html" data-i18n="nav.about">Nosotros</a><a href="index.html" data-i18n="footer.home">Inicio</a><a href="privacidad.html" data-i18n="footer.privacy">Pol&iacute;ticas de Privacidad</a><a href="terminos.html" data-i18n="footer.terms">T&eacute;rminos y Condiciones</a></div></div></footer>
-<script src="i18n.js"></script>
-<script src="script.js"></script>
-</body></html>
+  <header class="subhero contact-hero">
+    <nav class="navbar container">
+      <div class="brand-nav"></div>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-mobile-top">
+          <div class="brand-nav"></div>
+          <button class="menu-close" id="menu-close" aria-label="Cerrar menú">&#10005;</button>
+        </li>
+        <li class="nav-dropdown">
+          <a href="index.html" data-i18n="nav.home">Inicio</a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#diferencia" data-i18n="nav.diff">Lo que nos diferencia</a></li>
+            <li><a href="index.html#como" data-i18n="nav.how">¿Cómo funciona?</a></li>
+            <li><a href="index.html#clientes" data-i18n="nav.clients">Nuestros clientes</a></li>
+            <li><a href="index.html#planes" data-i18n="nav.plans">Planes</a></li>
+          </ul>
+        </li>
+        <li><a href="contacto.html" data-i18n="footer.contact">Contáctanos</a></li>
+        <li><a href="nosotros.html" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="contacto.html" data-i18n="nav.login">Iniciar sesión</a></li>
+        <li><a class="btn-nav" href="contacto.html" data-i18n="nav.register">Registrarse</a></li>
+        <li class="lang-switch lang-switch-desktop">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select" id="lang-select" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+        </li>
+        <li class="nav-mobile-bottom">
+          <div class="lang-select-wrap">
+            <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+            <select class="lang-select lang-select-mobile" aria-label="Idioma">
+              <option value="es">ES</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="nav-mobile-social">
+            <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+          <p class="nav-mobile-copyright">© 2026 MINEX. Todos los derechos reservados.</p>
+        </li>
+      </ul>
+    </nav>
+    <div class="container reveal"><h1 data-i18n="contact.h1">CONTÁCTANOS</h1></div>
+  </header>
+
+  <main class="container section reveal">
+    <form class="contact-form" novalidate>
+      <div class="form-plane" aria-hidden="true">
+        <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </div>
+      <label><span data-i18n="contact.name">Nombre Completo:</span><input type="text" required autocomplete="name"></label>
+      <label><span data-i18n="contact.email">Email:</span><input type="email" required autocomplete="email"></label>
+      <label><span data-i18n="contact.phone">Teléfono:</span><input type="tel" autocomplete="tel"></label>
+      <label><span data-i18n="contact.clientType">Tipo de cliente:</span><input type="text"></label>
+      <label><span data-i18n="contact.message">Mensaje:</span><textarea rows="5"></textarea></label>
+      <label class="check"><input type="checkbox" required> <span data-i18n="contact.terms">Al suscribirme, acepto los Términos y Condiciones.</span></label>
+      <button class="btn" type="submit" data-i18n="contact.cta">¡Descubrir!</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-footer"></div>
+        <p data-i18n="footer.desc">Plataforma de certificación y trazabilidad de minerales responsable en Peru.</p>
+      </div>
+      <div class="footer-links">
+        <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+        <a href="contacto.html" data-i18n="footer.contact">Contáctanos</a>
+        <a href="privacidad.html" data-i18n="footer.privacy">Políticas de Privacidad</a>
+        <a href="terminos.html" data-i18n="footer.terms">Términos y Condiciones</a>
+      </div>
+      <div class="footer-right">
+        <div class="lang-select-wrap">
+          <svg class="globe-icon" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
+          <select class="lang-select lang-select-footer" aria-label="Idioma">
+            <option value="es">ESPAÑOL</option>
+            <option value="en">ENGLISH</option>
+          </select>
+        </div>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" data-i18n="footer.copyright">© 2026 MINEX. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
