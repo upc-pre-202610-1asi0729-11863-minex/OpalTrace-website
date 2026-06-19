@@ -1,5 +1,6 @@
 ﻿const i18n = {
   es: {
+    "brand.by": "DE MINEX",
     "nav.home": "Inicio",
     "nav.diff": "Lo que nos diferencia",
     "nav.how": "¿Cómo funciona?",
@@ -197,6 +198,7 @@
     "privacy.l10b": "Para cualquier consulta relacionada con el tratamiento de sus datos personales: MINEX — OpalTrace | Correo: privacidad@minex.pe | Lima, Perú"
   },
   en: {
+    "brand.by": "BY MINEX",
     "nav.home": "Home",
     "nav.diff": "What sets us apart",
     "nav.how": "How it works",
