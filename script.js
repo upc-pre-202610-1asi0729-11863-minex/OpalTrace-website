@@ -30,22 +30,27 @@ if (navLinks) {
 }
 
 // Hero carousel
-const heroTrack = document.getElementById("hero-track");
-const heroArrow = document.getElementById("hero-arrow");
-const heroDots  = document.querySelectorAll("#hero-dots .hero-dot");
+const heroTrack     = document.getElementById("hero-track");
+const heroArrowNext = document.getElementById("hero-arrow");
+const heroArrowPrev = document.getElementById("hero-arrow-prev");
+const heroDots      = document.querySelectorAll("#hero-dots .hero-dot");
 
-if (heroTrack && heroArrow && heroDots.length) {
+if (heroTrack && heroArrowNext && heroArrowPrev && heroDots.length) {
   let heroIndex = 0;
   const heroSlideCount = heroDots.length;
 
   function goToHeroSlide(index) {
-    heroIndex = index % heroSlideCount;
+    heroIndex = (index + heroSlideCount) % heroSlideCount;
     heroTrack.style.transform = `translateX(-${heroIndex * (100 / heroSlideCount)}%)`;
     heroDots.forEach((dot, i) => dot.classList.toggle("active", i === heroIndex));
+    heroArrowPrev.hidden = heroIndex === 0;
   }
 
-  heroArrow.addEventListener("click", () => goToHeroSlide(heroIndex + 1));
+  heroArrowNext.addEventListener("click", () => goToHeroSlide(heroIndex + 1));
+  heroArrowPrev.addEventListener("click", () => goToHeroSlide(heroIndex - 1));
   heroDots.forEach((dot, i) => dot.addEventListener("click", () => goToHeroSlide(i)));
+
+  goToHeroSlide(0);
 }
 
 // Reveal on scroll

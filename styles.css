@@ -195,7 +195,7 @@ li.nav-mobile-bottom { list-style: none; }
   transition: transform .6s ease;
 }
 .hero-slide { flex: 0 0 calc(100% / 3); min-height: 665px; display: flex; align-items: center; }
-.hero-slide-video .hero-index { display: flex; flex-direction: column; align-items: flex-start; }
+.hero-slide-video .hero-index { display: flex; flex-direction: column; align-items: center; text-align: center; }
 .hero-slide-label {
   text-transform: uppercase; letter-spacing: .08em; font-weight: 600;
   font-size: .85rem; margin-bottom: .8rem; opacity: .85;
@@ -208,13 +208,16 @@ li.nav-mobile-bottom { list-style: none; }
   font-size: .95rem; text-align: center; padding: 1rem;
 }
 .hero-arrow {
-  position: absolute; top: 50%; right: 2rem; transform: translateY(-50%);
+  position: absolute; top: 50%; transform: translateY(-50%);
   width: 48px; height: 48px; border-radius: 50%; border: 0;
   background: rgba(255,255,255,.18); color: var(--color-white);
   display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: background .2s ease;
+  cursor: pointer; transition: background .2s ease, color .2s ease;
 }
-.hero-arrow:hover { background: rgba(255,255,255,.32); }
+.hero-arrow-next { right: 2rem; }
+.hero-arrow-prev { left: 2rem; }
+.hero-arrow:hover { background: var(--color-cta); color: var(--color-white); }
+.hero-arrow-prev[hidden] { display: none; }
 .hero-dots {
   position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
   display: flex; gap: .5rem;
@@ -555,7 +558,9 @@ h2 {
 
   .hero { min-height: 560px; }
   .hero-slide { min-height: 560px; }
-  .hero-arrow { right: 1rem; width: 40px; height: 40px; }
+  .hero-arrow { width: 40px; height: 40px; }
+  .hero-arrow-next { right: 1rem; }
+  .hero-arrow-prev { left: 1rem; }
   .hero-video-placeholder { font-size: .85rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-right { align-items: flex-start; }
@@ -567,6 +572,8 @@ h2 {
 
 @media (max-width: 480px) {
   .hero-slide { min-height: 480px; }
-  .hero-arrow { top: auto; bottom: 3.2rem; right: 1rem; transform: none; width: 36px; height: 36px; }
+  .hero-arrow { top: auto; bottom: 3.2rem; transform: none; width: 36px; height: 36px; }
+  .hero-arrow-next { right: 1rem; }
+  .hero-arrow-prev { left: 1rem; }
   .hero-dots { bottom: 1rem; }
 }
